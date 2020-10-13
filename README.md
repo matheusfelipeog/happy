@@ -39,6 +39,7 @@ O projeto está em desenvolvimento na [Next Level Week 3](https://nextlevelweek.
   - [Leaflet](https://leafletjs.com/)
   - [React Leaflet](https://react-leaflet.js.org/)
   - [Open Street Map](https://www.openstreetmap.org/) ou [Mapbox](https://www.mapbox.com/)
+  - [Framer Motion](https://www.framer.com/motion/)
 
 
 ## ⚙ Instalação e Start
