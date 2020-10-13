@@ -8,6 +8,11 @@
     align-items: center;
 }
 
+#page-landing .wrapper-logo-happy{
+    position: absolute;
+    z-index: 10;
+}
+
 #page-landing .content-wrapper {
     position: relative;
 
