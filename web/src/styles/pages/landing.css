@@ -127,31 +127,38 @@
     }
 
     #page-landing .content-wrapper img {
-        margin-top: 0;
+        margin-top: 20px;
+        width: 150px;
     }
 
     #page-landing .content-wrapper main {
         max-width: 350px;
-        margin-top: 45vh;
+        margin-top: 50vh;
     }
 
     #page-landing .content-wrapper main h1 {
-        font-size: 50px;
-        line-height: 60px;
+        font-size: 36px;
+        line-height: 35px;
     }
 
     #page-landing .content-wrapper main p {
-        margin-top: 20px;
-        font-size: 24px;
+        margin-top: 5px;
+
+        font-size: 16px;
+        line-height: 20px;
     }
 
     .content-wrapper .location {
         position: relative;
-
+        
         font-size: 18px;
         line-height: 24px;
-
-        margin-bottom: 15px;
+        
+        margin-right: auto;
+        margin-bottom: 40px;
     }
 
+    .content-wrapper .enter-app {
+        margin-bottom: 25px;
+    }
 }
