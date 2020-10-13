@@ -33,6 +33,13 @@ O projeto está em desenvolvimento na [Next Level Week 3](https://nextlevelweek.
 
 ## 🛠 Techs
 
+- **Web**
+  - [React](https://reactjs.org/)
+  - [Typescript](https://www.typescriptlang.org/)
+  - [Leaflet](https://leafletjs.com/)
+  - [React Leaflet](https://react-leaflet.js.org/)
+  - [Open Street Map](https://www.openstreetmap.org/) ou [Mapbox](https://www.mapbox.com/)
+
 
 ## ⚙ Instalação e Start
 
