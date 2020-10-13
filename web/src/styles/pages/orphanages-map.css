@@ -63,3 +63,40 @@
 #page-map .create-orphanage:hover {
     background: #17d6eb;
 }
+
+/* MEDIA QUERY */
+
+@media (max-width: 720px) {
+    #page-map {
+        flex-direction: column-reverse;
+    }
+    
+    #page-map aside {
+        width: 100%;
+        padding: 35px;
+    }
+
+    #page-map aside img{
+        margin-left: 40vw;
+    }
+
+    #page-map aside h2 {
+        font-size: 35px;
+        line-height: 35px;
+        margin-top: 20px;
+    }
+    
+    #page-map aside p {
+        margin-top: 10px;
+    }
+
+    #page-map aside footer {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    #page-map .create-orphanage {
+        right: 10px;
+        top: 10px;
+    }
+}
