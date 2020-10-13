@@ -17,12 +17,16 @@
     height: 100%;
     max-height: 680px;
 
+    margin-left: 35px;
+    margin-right: 35px;
+
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
 
     background: url('../../images/landing.svg') no-repeat 80% center;
+    transition: background 0.2s;
 }
 
 #page-landing .content-wrapper img {
@@ -80,4 +84,74 @@
 
 .content-wrapper .enter-app:hover {
     background: #96feff;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 1050px) {
+    #page-landing .content-wrapper{
+        max-height: 750px;
+
+        background: url('../../images/landing-two-girls.svg') no-repeat 90% center;
+    }
+
+    #page-landing .content-wrapper img {
+        margin-top: 0;
+    }
+
+    #page-landing .content-wrapper main {
+        max-width: 450px;
+    }
+
+    #page-landing .content-wrapper main h1 {
+        font-size: 55px;
+    }
+
+    #page-landing .content-wrapper main p {
+        font-size: 26px;
+    }
+
+    .content-wrapper .location {
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 720px) {
+    #page-landing .content-wrapper{
+        max-height: 900px;
+        
+        display: flex;
+        align-items: center;
+        background: url('../../images/landing-one-girl.svg') no-repeat center 30%;
+    }
+
+    #page-landing .content-wrapper img {
+        margin-top: 0;
+    }
+
+    #page-landing .content-wrapper main {
+        max-width: 350px;
+        margin-top: 45vh;
+    }
+
+    #page-landing .content-wrapper main h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    #page-landing .content-wrapper main p {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+
+    .content-wrapper .location {
+        position: relative;
+
+        font-size: 18px;
+        line-height: 24px;
+
+        margin-bottom: 15px;
+    }
+
 }
