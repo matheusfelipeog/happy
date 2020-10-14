@@ -41,6 +41,13 @@ O projeto está em desenvolvimento na [Next Level Week 3](https://nextlevelweek.
   - [Open Street Map](https://www.openstreetmap.org/) ou [Mapbox](https://www.mapbox.com/)
   - [Framer Motion](https://www.framer.com/motion/)
 
+- **Backend**
+  - [Nodejs](https://nodejs.org/en/)
+  - [Express](https://expressjs.com/) 
+  - [Typeorm](https://typeorm.io/)
+  - [Multer](https://github.com/expressjs/multer)
+  - [Yup](https://github.com/jquense/yup)
+
 
 ## ⚙ Instalação e Start
 
@@ -54,18 +61,37 @@ Clone o repositório com:
 
 As demonstrações utilizam **YARN** por padronização, mas, caso use **NPM**, basta substituir onde estiver escrito `yarn` por `npm`.
 
-Instalando dependências do projeto web:
+**Instalando dependências do projeto web:**
 
 ```bash
 > cd happy/web
 > yarn install
 ```
 
-Para executar cada projeto, use no diretório correspondente ao que quer executar:
+Para executar o projeto **web**, use no diretório correspondente:
 
 ```bash
 > yarn start
 ```
+
+Acesse: [`http://127.0.0.1:3000/`](http://127.0.0.1:3000/) para visualizar.
+
+
+**Instalando dependências do projeto backend:**
+
+```bash
+> cd happy/backend
+> yarn install
+```
+
+Para executar o projeto **backend** é necessário criar o banco de dados com todas as tabelas utilizadas, para isso, use no diretório correspondente:
+
+```bash
+> yarn typeorm migration:run
+> yarn dev
+```
+
+Acesse: [`http://127.0.0.1:3333/`](http://127.0.0.1:3333/) para visualizar.
 
 
 ## 🤝 Contribuições
