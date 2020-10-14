@@ -41,6 +41,13 @@ O projeto está em desenvolvimento na [Next Level Week 3](https://nextlevelweek.
   - [Open Street Map](https://www.openstreetmap.org/) ou [Mapbox](https://www.mapbox.com/)
   - [Framer Motion](https://www.framer.com/motion/)
 
+- **Backend**
+  - [Nodejs](https://nodejs.org/en/)
+  - [Express](https://expressjs.com/) 
+  - [Typeorm](https://typeorm.io/)
+  - [Multer](https://github.com/expressjs/multer)
+  - [Yup](https://github.com/jquense/yup)
+
 
 ## ⚙ Instalação e Start
 
