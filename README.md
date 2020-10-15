@@ -31,6 +31,7 @@ O projeto está em desenvolvimento na [Next Level Week 3](https://nextlevelweek.
 ## 📸 Screenshots
 
 <p align="center">
+  <strong>Tela Web</strong> <br />
   <img src="./.github/assets/gifs/demo.gif" alt="Demonstração da plataforma Happy" />
 </p>
 
