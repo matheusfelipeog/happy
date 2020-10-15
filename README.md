@@ -30,6 +30,9 @@ O projeto está em desenvolvimento na [Next Level Week 3](https://nextlevelweek.
 
 ## 📸 Screenshots
 
+<p align="center">
+  <img src="./.github/assets/gifs/demo.gif" alt="Demonstração da plataforma Happy" />
+</p>
 
 ## 🛠 Techs
 
