@@ -1,0 +1,6 @@
+# Not download binary files
+/.github/assets/images/*.jpg export-ignore
+/.github/assets/images/*.jpeg export-ignore
+/.github/assets/images/*.png export-ignore
+
+/.github/assets/gifs/*.gif export-ignore
