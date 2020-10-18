@@ -72,7 +72,15 @@ As demonstrações utilizam **YARN** por padronização, mas, caso use **NPM**, 
 > yarn install
 ```
 
-Para executar o projeto **web**, use no diretório correspondente:
+Para executar o projeto **web** completo, é necessário ter um **token** de autenticação da API do Mapbox. Acesse sua conta no site e crie um token para ser utilizado no projeto. Com o token em mãos, crie um arquivo `.env` e coloque seu token como valor da chave `REACT_APP_MAPBOX_TOKEN`.
+
+Exemplo:
+
+```text
+REACT_APP_MAPBOX_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+Agora use starte o projeto em seu ambiente com:
 
 ```bash
 > yarn start
