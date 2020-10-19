@@ -167,6 +167,7 @@ export default function CreateOrphanage() {
               <input
                 type="file"
                 multiple
+                accept=".png, .jpg, .jpeg"
                 onChange={handleSelectImages}
                 id="image[]"
               />
