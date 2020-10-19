@@ -1,7 +1,7 @@
 import React, { ChangeEvent, FormEvent, useState } from "react";
 import { useHistory } from "react-router-dom";
 import { Map, Marker, TileLayer } from 'react-leaflet';
-import { FiPlus } from "react-icons/fi";
+import { FiPlus, FiX } from "react-icons/fi";
 import { LeafletMouseEvent } from 'leaflet';
 
 import api from "../services/api";
@@ -10,6 +10,11 @@ import Sidebar from "../components/SideBar";
 import mapIcon from "../utils/mapIcon";
 
 import '../styles/pages/create-orphanage.css';
+
+interface PreviewImage {
+  name: string;
+  url: string;
+}
 
 export default function CreateOrphanage() {
   const history = useHistory();
@@ -22,7 +27,7 @@ export default function CreateOrphanage() {
   const [opening_hours, setOpeningHours] = useState('');
   const [open_on_weekends, setOpenOnWeekends] = useState(true);
   const [images, setImages] = useState<File[]>([]);
-  const [previewImages, setPreviewImages] = useState<string[]>([]);
+  const [previewImages, setPreviewImages] = useState<PreviewImage[]>([]);
 
   function handleMapClick(event: LeafletMouseEvent) {
     const { lat, lng } = event.latlng;
@@ -65,13 +70,24 @@ export default function CreateOrphanage() {
     }
     const selectedImages = Array.from(event.target.files);
 
+    event.target.value = "";
+
     setImages(selectedImages);
 
     const selectedImagesPreview = selectedImages.map(image => {
-      return URL.createObjectURL(image);
+      return { name: image.name, url: URL.createObjectURL(image) };
     });
 
     setPreviewImages(selectedImagesPreview);
+  }
+
+  function handleRemoveImage(image: PreviewImage) {
+    setPreviewImages(
+      previewImages.map((image) => image).filter((img) => img.url !== image.url)
+    );
+    setImages(
+      images.map((image) => image).filter((img) => img.name !== image.name)
+    );
   }
 
   return (
@@ -129,10 +145,18 @@ export default function CreateOrphanage() {
               <label htmlFor="images">Fotos</label>
 
               <div className="images-container">
-                {previewImages.map(image => {
+                {previewImages.map((image) => {
                   return (
-                    <img key={image} src={image} alt={name} />
-                  )
+                    <div key={image.url}>
+                      <span
+                        className="remove-image"
+                        onClick={() => handleRemoveImage(image)}
+                      >
+                        <FiX size={18} color="#ff669d" />
+                      </span>
+                      <img src={image.url} alt={name} className="new-image" />
+                    </div>
+                  );
                 })}
 
                 <label htmlFor="image[]" className="new-image">
@@ -142,10 +166,10 @@ export default function CreateOrphanage() {
 
               <input
                 type="file"
-                id="image[]"
                 multiple
                 accept=".png, .jpg, .jpeg"
                 onChange={handleSelectImages}
+                id="image[]"
               />
             </div>
           </fieldset>

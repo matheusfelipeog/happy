@@ -112,6 +112,27 @@ form.create-orphanage-form .input-block .new-image {
   align-items: center;
 }
 
+form.create-orphanage-form .input-block .images-container div {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+form.create-orphanage-form .input-block .remove-image {
+  position: absolute;
+  padding: 5px 5px 0 5px;
+
+  background: #fff;
+  border: 1px dashed #96d2f0;
+
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+
+  cursor: pointer;
+}
+
 form.create-orphanage-form .input-block input[type=file] {
   display: none;
 }
